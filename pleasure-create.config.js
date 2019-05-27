@@ -11,6 +11,7 @@ module.exports = {
       message: 'Setup',
       validate (a) {
         console.log({ a })
+        process.exit(0)
         return true
       },
       choices: [
