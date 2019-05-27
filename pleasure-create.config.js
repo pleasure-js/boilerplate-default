@@ -27,5 +27,12 @@ module.exports = {
         }
       ]
     }
-  ]
+  ],
+  transform (data) {
+    const config = {}
+    data.config.forEach(v => {
+      config[v] = true
+    })
+    return data
+  }
 }
