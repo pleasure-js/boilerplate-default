@@ -9,6 +9,9 @@
     "build": "rollup -c",
     "build:live": "nodemon -w src --exec yarn build"
   },
+  "dependencies": {
+    "pleasure-cli": "keepwondering/pleasure-cli"
+  },
   "devDependencies": {
     "marked": "^0.6.2",
     "nodemon": "^1.19.1",
