@@ -9,8 +9,8 @@ module.exports = {
       type: 'checkbox',
       name: 'config',
       message: 'Setup',
-      validate (a, b) {
-        console.log({ a, b })
+      validate (a) {
+        console.log({ a })
         return true
       },
       choices: [
