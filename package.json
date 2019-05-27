@@ -3,7 +3,7 @@
   "version": "1.0.0-beta",
   "description": "default boilerplate options for pleasure",
   "main": "index.js",
-  "author": "{{ author }}",
+  "author": "{{{ author }}}",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
