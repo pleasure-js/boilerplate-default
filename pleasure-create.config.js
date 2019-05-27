@@ -3,12 +3,16 @@ module.exports = {
   prompts: [
     {
       name: 'author',
-      message: 'Author name?'
+      message: 'Author'
     },
     {
       type: 'checkbox',
       name: 'config',
-      message: 'Author name?',
+      message: 'Setup',
+      validate (a, b) {
+        console.log({ a, b })
+        return true
+      },
       choices: [
         {
           name: 'api',
