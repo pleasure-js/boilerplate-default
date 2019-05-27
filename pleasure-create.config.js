@@ -9,10 +9,8 @@ module.exports = {
       type: 'checkbox',
       name: 'config',
       message: 'Setup',
-      validate (a) {
-        console.log({ a })
-        process.exit(0)
-        return true
+      validate (o) {
+        return o.length === 0 ? 'Pick at least one option' : true
       },
       choices: [
         {
