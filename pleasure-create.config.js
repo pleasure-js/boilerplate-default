@@ -33,6 +33,6 @@ module.exports = {
     data.config.forEach(v => {
       config[v] = true
     })
-    return data
+    return config
   }
 }
