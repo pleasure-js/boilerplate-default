@@ -5,10 +5,11 @@ module.exports = {
       fileMap
     }
   },
-  // see: https://github.com/terkelg/prompts
-  prompts: {
-    type: 'text',
-    name: 'author',
-    message: 'Author name?'
-  }
+  // see `inquirer.prompt` in https://github.com/SBoudrias/Inquirer.js/
+  prompts: [
+    {
+      name: 'author',
+      message: 'Author name?'
+    }
+  ]
 }
