@@ -20,7 +20,7 @@ module.exports = {
           name: 'ui',
           value: 'ui',
           short: 'Enable UI',
-          checked
+          checked: true
         }
       ]
     }
