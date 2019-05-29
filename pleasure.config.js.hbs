@@ -1,5 +1,5 @@
 module.exports = {
-  debug: true,
+  debug: true{{#if config.ui}},
   ui: {
     postCssVariables: {
       theme: {
@@ -9,5 +9,5 @@ module.exports = {
         }
       }
     }
-  }
+  }{{/if}}
 }
