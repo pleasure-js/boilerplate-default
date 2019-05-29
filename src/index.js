@@ -1,7 +1,3 @@
-/*
-todo:
-  -
- */
 
 export default {
 

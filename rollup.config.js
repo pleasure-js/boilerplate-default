@@ -47,6 +47,12 @@ export default [
         file: 'dist/pleasure-api.esm.js',
         format: 'esm',
         banner
+      },
+      {
+        file: 'dist/pleasure-api.esm.js',
+        format: 'iife',
+        name: `{{{ iifeName }}}`,
+        banner
       }
     ],
     plugins
