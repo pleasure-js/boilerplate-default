@@ -1,0 +1,11 @@
+{
+  "messages": {
+    "glossary": "Hello",
+    "loading": "Loading"
+  },
+  "entities": {
+    "label": {
+      "product": "Products!"
+    }
+  }
+}

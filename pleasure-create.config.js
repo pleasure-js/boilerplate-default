@@ -37,5 +37,14 @@ module.exports = {
     })
     data.config = config
     return data
+  },
+  async finished ({ data, dir, fse, _ }) {
+    if (!data.config.ui) {
+      await fse.remove(path.join(dir, 'nuxt.config.js'))
+      await fse.remove(path.join(dir, 'client'))
+    }
+    if (!data.config.api) {
+      await fse.remove(path.join(dir, 'api'))
+    }
   }
 }
