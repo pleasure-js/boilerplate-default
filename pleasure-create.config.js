@@ -1,7 +1,14 @@
+const path = require('path')
+
 module.exports = {
   // see `inquirer.prompt` in https://github.com/SBoudrias/Inquirer.js/
-  prompts () {
+  prompts (dst) {
     return [
+      {
+        name: 'projectName',
+        message: 'Project name',
+        default: path.basename(dst)
+      },
       {
         name: 'author',
         message: 'Author'
