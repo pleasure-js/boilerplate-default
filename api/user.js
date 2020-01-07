@@ -1,5 +1,5 @@
 const md5 = require('md5')
-const { utils: { isEmail } } = require('pleasure')
+const { isEmail } = require('@pleasure-js/utils')
 
 const basicCreateAccess = () => ['fullName', 'email', 'password']
 const basicReadAccess = () => ['_id', 'fullName', 'email', 'level']

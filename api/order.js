@@ -1,4 +1,5 @@
-const { Types: { ObjectId } } = require('mongoose')
+const { mongoose: { Types: { ObjectId } } } = require('@pleasure-js/api')
+
 const omit = require('lodash/omit')
 const { schema: ProductSchema } = require('./product.js')
 
